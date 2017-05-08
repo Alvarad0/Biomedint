@@ -16,10 +16,10 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 	
 // Create the email and send the message
-$to = 'alvarado.programador@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-$email_subject = "Contacto de la Pagina Web:  $name";
+$to = 'biomedintclinica@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$email_subject = "Contacto de la Pagina Web clinicabiomedint.com  $name";
 $email_body = "Has recibido un nuevo mensaje del formulario de la paina web.\n\n"."Datos del Contacto:\n\nNombre y Apellido: $name\n\nCorreo: $email_address\n\nTeléfono: $phone\n\nMensaje:\n$message";
-$headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$headers = "From: noreply@clinicabiomedint.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";	
 mail($to,$email_subject,$email_body,$headers);
 return true;			

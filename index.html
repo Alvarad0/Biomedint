@@ -6,18 +6,21 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="keywords" content="Terapias, Scio, Hidroterapia de colon, Ozonoterapia, Rehabilitación fisica, Servicios, Lipolaser, Gimnasia Pasiva, Atencion al adulto mayor, Microdermoabrasión, Masaje relajante, Masaje Reductivo, Masaje descontracturante, Masaje de Drenaje Linfatico, Levantamiento de Busto y Gluteos, Day Spa, Depilacion con cera, Cavitacion, Vacum">
+        <meta name="description" content="Equilibra Tu Vida. En Biomedint encontrarás tratamientos para mejorar la salud, que van desde la rehabilitación corporal, control, retraso y prevención del envejecimiento.">
+        <meta name="author" content="Soft Mark">
+        <meta name="robots" content="index, follow">
 
         <title>Clinica Biomedint</title>
+        <link rel="icon" href="images/favicon.ico.png" type="image/png"/>
 
         <!-- Bootstrap Core CSS -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Font Awesome CSS -->
         <link href="css/font-awesome.min.css" rel="stylesheet">
-		
-		<!-- Custom CSS -->
+        
+        <!-- Custom CSS -->
         <link href="css/animate.css" rel="stylesheet">
 
         <!-- Custom CSS -->
@@ -25,6 +28,10 @@
 
         <!-- Custom Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <!-- Galeria CSS -->
+        <link rel="stylesheet" type="text/css" href="galeria/css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="galeria/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="galeria/css/elastislide.css" />
 
         <!-- Template js -->
         <script src="js/jquery-2.1.1.min.js"></script>
@@ -34,12 +41,32 @@
         <script src="js/jqBootstrapValidation.js"></script>
         <script src="js/modernizr.custom.js"></script>
         <script src="js/script.js"></script>
-        <script src="js/galeria.js"></script>
+
+        <!-- Galeria Script -->
+        <script type="text/javascript" src="galeria/js/jquery.tmpl.min.js"></script>
+        <script type="text/javascript" src="galeria/js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="galeria/js/jquery.elastislide.js"></script>
+        <script type="text/javascript" src="galeria/js/gallery.js"></script>
 
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">    
+            <div class="rg-image-wrapper">
+                    <div class="rg-image-nav">
+                        <a href="#" class="rg-image-nav-prev">Previous Image</a>
+                        <a href="#" class="rg-image-nav-next">Next Image</a>
+                    </div>
+                <div class="rg-image"></div>
+                <div class="rg-loading"></div>
+                <div class="rg-caption-wrapper">
+                    <div class="rg-caption" style="display:none;">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </script>
 
     </head>
     
@@ -51,8 +78,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="logo text-center">
-                            <h1>Clinica Biomedint</h1>
-                            <span>¡Consiente tu Cuerpo!</span>
+                        <img width="180px" height="80px" src="images/logo.png" alt="">
+                            <!-- <h1>Clinica Biomedint</h1> -->
+                            <!-- <span>¡Consiente tu Cuerpo!</span> -->
                         </div>
                     </div>
                 </div>
@@ -68,21 +96,21 @@
                     
                     <div class="col-md-3">
                         
-                        <div class="menu-item blue">
+                        <div class="menu-item">
                             <a href="#feature-modal" data-toggle="modal">
                                 <i class="fa fa-magic"></i>
                                 <p>Terapias</p>
                             </a>
                         </div>
                         
-                        <div class="menu-item green">
+                        <div class="menu-item">
                             <a href="#portfolio-modal" data-toggle="modal">
                                 <i class="fa fa-file-photo-o"></i>
                                 <p>Galería</p>
                             </a>
                         </div>
                         
-                        <div class="menu-item light-red">
+                        <div class="menu-item">
                             <a href="#about-modal" data-toggle="modal">
                                 <i class="fa fa-user"></i>
                                 <p>Acerca de Nosotros</p>
@@ -127,19 +155,19 @@
                     
                     <div class="col-md-3">
                         
-                        <div class="menu-item light-red">
+                        <div class="menu-item">
                             <a href="#contact-modal" data-toggle="modal">
                                 <i class="fa fa-envelope-o"></i>
                                 <p>Contáctanos</p>
                             </a>
                         </div>
-                        <div class="menu-item light-orange responsive-2">
+                        <div class="menu-item responsive-2">
                                     <a href="#team-modal" data-toggle="modal">
                                         <i class="fa fa-users"></i>
-                                        <p>Colaboradores</p>
+                                        <p>Promociones</p>
                                     </a>
                                 </div>
-                        <div class="menu-item color responsive">
+                        <div class="menu-item responsive">
                                     <a href="#service-modal" data-toggle="modal">
                                         <i class="fa fa-area-chart"></i>
                                         <p>Servicios</p>
@@ -171,7 +199,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div>Design & Developed by <a href="https://www.facebook.com/Shahriyar.Ahmed.Sohel" target="_blank">Shahriyar Ahmed</a> for <a href="http://graygrids.com">GrayGrids</a></div>
+                        <div>Desarrollado por <b>Soft Mark</b></div>
                     </div>
                 </div>
             </div>
@@ -189,10 +217,13 @@
                     </div>
                 </div>
                 
-                <div id="container-main">
-                <h1>Nuestras Terapias</h1><br>
-
-    <div class="accordion-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title text-center">
+                            <h1>Nuestras Terapias</h1><br>
+                        </div>
+                    </div>
+                     <div class="accordion-container">
     
         <a href="#" class="accordion-titulo">Scio<span class="toggle-icon"></span></a>
         <div class="accordion-content">
@@ -210,8 +241,8 @@
         </div>
         
     </div>
-    
-    <div class="accordion-container">
+        
+        <div class="accordion-container">
         <a href="#" class="accordion-titulo">Hidroterapia de colon<span class="toggle-icon"></span></a>
         <div class="accordion-content">
             <img src="images/Terapias/t_hidroterapia.jpg" alt=""/>
@@ -225,6 +256,7 @@
 
         </div>
     </div>
+
     <div class="accordion-container">
         <a href="#" class="accordion-titulo">Ozonoterapia<span class="toggle-icon"></span></a>
         <div class="accordion-content">
@@ -238,26 +270,35 @@
             <h5>- Fortalece el sistema inmune</h5>
         </div>
     </div>
+
     <div class="accordion-container">
         <a href="#" class="accordion-titulo">Rehabilitación Física <span class="toggle-icon"></span></a>
         <div class="accordion-content">
+        <img src="images/Terapias/t_fisica.png" alt="">
             <h5><b>Síndromes dolorosos.</b></h5>
-            <h5>Es un conjunto de signos y síntomas crónicos y remitentes como lumbalgias, fibromialgias, artropatías, artritis, etc.</h5><br>
+            <h5>Es un conjunto de signos y síntomas crónicos y remitentes como lumbalgias, fibromialgias, artropatías, artritis, etc.</h5>
+            <h5>Según la patología estas son tratadas con termoterapia, ventosas, lámpara infrarroja, laser, ejercicios, electroestimulación entre otros.</h5><br>
             <h5><b>Electroestimulación</b></h5>
-            <h5>Es una terapia la cual se realiza por pequeñas pulsaciones electromagnéticas que relajan y tonifican los músculos.</h5><br>
+            <h5>Es una terapia la cual se realiza por pequeñas pulsaciones electromagnéticas provocando contracciones musculares  que relajan y tonifican, así también mejoran la fuerza y reparan los  tejidos neuromusculares dañados por inflamaciones, degeneraciones ó traumatismos.</h5><br>
             <h5><b>Rehabilitación Neurológica</b></h5>
-            <h5>Terapia que reactiva la  sensibilidad y movimientos de las zonas inactivas con lesiones o traumatismos.</h5><br>
+            <h5>Terapia que reactiva la  sensibilidad y movimientos de las zonas inactivas con lesiones o traumatismos  por medio de ejercicios.</h5>
+            <h5>Objetivo es  máxima recuperación de la zona afectada en términos de balance articular,  muscular y propiosectiva para volver al paciente al estado más próximo posible que tenía antes de la lesión.</h5><br>
             <h5><b>Esguinces</b></h5>
-            <h5>Es un proceso inflamatorio en el cual una articulación se mueve y vuelve a entrar a su zona articular.</h5><br>
-            <h5><b>Fracturas</b></h5>
-            <h5>Es la perdida de la continuidad de los huesos.</h5><br>
+            <h5>Es un proceso inflamatorio en el cual una articulación se mueve y vuelve a entrar a su zona articular de forma forzada a moverse en una posición antinatural que puede ir acompañada de la ruptura de un ligamento o de las fibras musculares que sostienen los huevos.</h5><br>
+            <h5><b>Postfracturas</b></h5>
+            <h5>Para favorecer la consolidación mediante medios físicos como irrigación, compresión e inmovilización y tratar la afectación de partes blandas, disminuir los efectos de la inmovilización como dolor edema y recuperación de funcionalidad muscular. Asistencia de reeducación propioceptiva, tens, ultrasonido, baños de contraste.</h5><br>
             <h5><b>Masaje Deportivo</b></h5>
-            <h5>Es un tipo de masaje en el cual sirve para moldear, relajar y descontracturar zonas musculares especificas.</h5>
+            <h5>Es un tipo de masaje en el cual sirve para moldear, relajar y descontracturar zonas musculares específicas, además de prevenir y tratar lesiones el masaje deportivo se puede realizar antes o después de la actividad física ya que prepara el tejido muscular.</h5>
+            <h5><b>Beneficios</b></h5>
+            <h5>- Aumenta el flujo sanguíneo</h5>
+            <h5>- Aumenta la oxigenación</h5>
+            <h5>- Reduce el tiempo de recuperación</h5>
+            <h5>- Reduce el dolor</h5>
+            <h5>- Regula el tomo muscular</h5>
         </div>
     </div>
 
-</div>
-                
+                </div>
             </div>
         </div>
         <!-- End Feature Section -->
@@ -274,31 +315,50 @@
                     </div>
                 </div>
                 
+                <!-- Galeria -->
                 <div class="container">
-                    <!-- Galeria -->
                     <div class="row">
-    <h1>Galería</h1><br><br>
-   
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Titulo" href="#"><img class="thumbnail img-responsive" src="images/galeria/1.jpg"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Titulo" href="#"><img class="thumbnail img-responsive" src="images/galeria/2.jpg"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Titulo" href="#"><img class="thumbnail img-responsive" src="images/galeria/3.jpg"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Titulo" href="#"><img class="thumbnail img-responsive" src="images/galeria/4.jpg"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Titulo" href="#"><img class="thumbnail img-responsive" src="images/galeria/5.jpg"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Titulo" href="#"><img class="thumbnail img-responsive" src="images/galeria/6.jpg"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Titulo" href="#"><img class="thumbnail img-responsive" src="images/galeria/7.jpg"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Titulo" href="#"><img class="thumbnail img-responsive" src="images/galeria/8.jpg"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Titulo" href="#"><img class="thumbnail img-responsive" src="images/galeria/9.jpg"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Titulo" href="#"><img class="thumbnail img-responsive" src="images/galeria/10.jpg"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Titulo" href="#"><img class="thumbnail img-responsive" src="images/galeria/11.jpg"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Titulo" href="#"><img class="thumbnail img-responsive" src="images/galeria/12.jpg"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Titulo" href="#"><img class="thumbnail img-responsive" src="images/galeria/13.jpg"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Titulo" href="#"><img class="thumbnail img-responsive" src="images/galeria/14.jpg"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Titulo" href="#"><img class="thumbnail img-responsive" src="images/galeria/15.jpg"></a></div>
-   
-    <hr>
-    
-    <hr>
-  </div>
+                        <div class="section-title text-center">
+                            <h1>Galería</h1><br>
+                        </div>
+                    </div>
+                    <div class="content">
+                <div id="rg-gallery" class="rg-gallery">
+                    <div class="rg-thumbs">
+                        <!-- Elastislide Carousel Thumbnail Viewer -->
+                        <div class="es-carousel-wrapper">
+                            <div class="es-nav">
+                                <span class="es-nav-prev">Atrás</span>
+                                <span class="es-nav-next">Siguiente</span>
+                            </div>
+                            <div class="es-carousel">
+                                <ul>
+                                    <li><a href="#"><img src="images/thumbs/1.jpg" data-large="images/galeria/1.jpg" alt="" data-description="Clinica Biomedint" /></a></li>
+                                    <li><a href="#"><img src="images/thumbs/2.jpg" data-large="images/galeria/2.jpg" alt="" data-description="Clinica Biomedint" /></a></li>
+                                    <li><a href="#"><img src="images/thumbs/3.jpg" data-large="images/galeria/3.jpg" alt="" data-description="Clinica Biomedint" /></a></li>
+                                    <li><a href="#"><img src="images/thumbs/4.jpg" data-large="images/galeria/4.jpg" alt="" data-description="Scio" /></a></li>
+                                    <li><a href="#"><img src="images/thumbs/5.jpg" data-large="images/galeria/5.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="images/thumbs/6.jpg" data-large="images/galeria/6.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="images/thumbs/7.jpg" data-large="images/galeria/7.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="images/thumbs/8.jpg" data-large="images/galeria/8.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="images/thumbs/9.jpg" data-large="images/galeria/9.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="images/thumbs/10.jpg" data-large="images/galeria/10.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="images/thumbs/11.jpg" data-large="images/galeria/11.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="images/thumbs/12.jpg" data-large="images/galeria/12.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="images/thumbs/13.jpg" data-large="images/galeria/13.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="images/thumbs/14.jpg" data-large="images/galeria/14.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="images/thumbs/15.jpg" data-large="images/galeria/15.jpg" alt="" data-description="" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End Elastislide Carousel Thumbnail Viewer -->
+                    </div><!-- rg-thumbs -->
+                </div><!-- rg-gallery -->
+            </div><!-- content -->
+                </div>
+                <!-- Termina Galeria -->
+
+                
             </div>
             <div tabindex="-1" class="modal fade" id="myModal" role="dialog">
   <div class="modal-dialog">
@@ -332,7 +392,7 @@
                         </div><br><br>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="custom-tab">
                         
                                 <ul class="nav nav-tabs nav-justified" role="tablist">
@@ -344,26 +404,29 @@
                                 <div class="tab-content">
 
                                     <div class="tab-pane active" id="tab-1">
-                                        <p>Nuestra misión es brindar satisfacción, bienestar y salud a los usuarios, ofreciendo servicios con atención personalizada de calidad, con un manejo multidisciplinario de medicina integrativa realizado por especialistas en salud.</p>
+                                    <img class="acerca" src="images/util/icon-mision.png" alt="">
+                                        <p><b>Nuestra misión es brindar satisfacción, bienestar y salud a los usuarios, ofreciendo servicios con atención personalizada de calidad, con un manejo multidisciplinario de medicina integrativa realizado por especialistas en salud.</b></p>
                                      </div>
 
 
                                     <div class="tab-pane" id="tab-2">
-                                        <p>Proporcionar servicios de salud integral con vanguardismo, innovación, seguridad y confianza en las opciones terapéuticas de la medicina integrativa, con la finalidad de generar bienestar, salud y satisfacción total de nuestros usuarios.</p>
+                                    <img class="acerca" src="images/util/icon-vision.png" alt="">
+                                        <p><b>Proporcionar servicios de salud integral con vanguardismo, innovación, seguridad y confianza en las opciones terapéuticas de la medicina integrativa, con la finalidad de generar bienestar, salud y satisfacción total de nuestros usuarios.</b></p>
                                     </div>
 
 
                                     <div class="tab-pane" id="tab-3">
-                                        <p>- Sentido Humanista</p>
-                                        <p>- Honestidad</p>
-                                        <p>- Compromiso</p>
-                                        <p>- Responsabilidad</p>
-                                        <p>- Calidez</p>
-                                        <p>- Tolerancia</p>
-                                        <p>- Equidad</p>
-                                        <p>- Respeto</p>
-                                        <p>- Lealtad</p>
-                                        <p>- Ética</p>
+                                    <img class="acerca" src="images/util/icon-valores.png" alt="">
+                                        <p><b>- Sentido Humanista</b></p>
+                                        <p><b>- Honestidad</b></p>
+                                        <p><b>- Compromiso</b></p>
+                                        <p><b>- Responsabilidad</b></p>
+                                        <p><b>- Calidez</b></p>
+                                        <p><b>- Tolerancia</b></p>
+                                        <p><b>- Equidad</b></p>
+                                        <p><b>- Respeto</b></p>
+                                        <p><b>- Lealtad</b></p>
+                                        <p><b>- Ética</b></p>
                                     </div>
 
                                 </div><!-- /.tab-content -->
@@ -389,11 +452,13 @@
                 </div>
                 
                 <div class="container">
-                    <div id="container-main">
-                <h1>Nuestros Servicios</h1><br>
+                    <div class="row">
+                        <div class="section-title text-center">
+                            <h1>Nuestros Servicios</h1><br>
                 <h1>SPA</h1><br>
-
-    <div class="accordion-container">
+                        </div>
+                    </div>
+                    <div class="accordion-container">
     
         <a href="#" class="accordion-titulo">Lipolaser<span class="toggle-icon"></span></a>
         <div class="accordion-content">
@@ -407,7 +472,7 @@
         </div>
         
     </div>
-    
+
     <div class="accordion-container">
         <a href="#" class="accordion-titulo">Gimnasia Pasiva<span class="toggle-icon"></span></a>
         <div class="accordion-content">
@@ -424,11 +489,140 @@
         <div class="accordion-content">
             <img src="images/Servicios/s_atencion.jpg" alt=""/>
             <h5>Valoración Geronto- geriátrica integral y Consultoría especializada. Control de enfermedades crónico degenerativas</h5>
+            <h5>Primer contacto la valoración geriátrica: diagnóstico y manejo profiláctico de las enfermedades del adulto mayor, apoyo en las enfermedades crónicas degenerativas como Diabetes, Hipertensión, artritis, plan y seguimiento para sus distintas patología, un manejo integral de medicinas alópatas y alternativas enfocadas a una mejor calidad de vida.</h5>
+            <h5>Rehabilitación preventiva, permitiendo detectar a tiempo las personas en riesgo e iniciar las acciones pertinentes para disminuir o evitar deterioro de su calidad de vida.</h5>
+            <h5>El envejecimiento puede estar directamente relacionado con la falta de actividad. Entender las consecuencias de la falta de actividad física es de gran importancia cuando valoramos las necesidades de rehabilitación de una persona mayor. El aporte que la terapia física puede mejorar el desarrollo psicomotor, esto de rebote aumenta la autoestima, imagen corporal y disminuyen los nieles de ansiedad, estrés y depresión a su vez contribuye a combatir o retardar los procesos involutivos de la edad y/o inactividad que dan como resultado alteraciones de los órganos, aparatos y sistemas y aunque asintomáticos al principio, puede evolucionar hasta lograr la incapacidad física del sujeto.</h5>
+            <h5>Rehabilitación de fracturas y atrofia muscular así como terapias para manejo del dolor como ciatalgia, inflamación, lumbalgias, contracturas musculares.</h5>
             <h5><b>Beneficios</b></h5>
             <h5>- Orientación y  terapias neuropsicológicas, regenerativas y antienvejecimiento y control y manejo de enfermedades crónico degenerativas</h5>
         </div>
     </div>
-</div>
+    <div class="accordion-container">
+        <a href="#" class="accordion-titulo">Microdermoabrasión<span class="toggle-icon"></span></a>
+        <div class="accordion-content">
+            <img src="images/Servicios/s_microdermoabrasion.jpg" alt=""/>
+            <h5>Técnica para retirar células muertas ayuda a mantener la piel joven, suave y limpia. Se puede realizar en rostro, cuerpo y manos,
+después del tratamiento se puede seguir con las actividades diarias. 
+</h5>
+            <h5><b>Beneficios</b></h5>
+            <h5>- Reduce poros abiertos</h5>
+            <h5>- Marcas de acné</h5>
+            <h5>- Manchas ocasionadas por el sol</h5>
+            <h5>- Reduce líneas de expresión</h5>
+        </div>
+    </div>
+    <div class="accordion-container">
+        <a href="#" class="accordion-titulo">Masaje Relajante <span class="toggle-icon"></span></a>
+        <div class="accordion-content">
+            <img src="images/Servicios/s_mrelajante.jpg" alt=""/>
+            <h5>Se realice con movimientos suaves, armónicos y sin brusquedad, resultando agradables a la persona que los recibe, incluso cuando se trabajan contracturas o zonas doloridas.</h5>
+            <h5><b>Beneficios</b></h5>
+            <h5>- Mejora la circulación sanguínea en todo el cuerpo</h5>
+            <h5>-  Oxigena  tejidos y órganos</h5>
+            <h5>- Ayuda conciliar el sueño</h5>
+            <h5>- Elimina tenciones musculares</h5>
+            <h5>- Alivia el dolor de cabeza y estrés</h5>
+            <h5>- Nutre y oxigena el musculo</h5>
+            <h5>- Reestablece el equilibrio energético</h5>
+            <h5>- Combate cansancio y fatiga</h5>
+        </div>
+    </div>
+    <div class="accordion-container">
+        <a href="#" class="accordion-titulo">Masaje Reductivo<span class="toggle-icon"></span></a>
+        <div class="accordion-content">
+            <img src="images/Servicios/s_mreductivo.jpg" alt=""/>
+            <h5>Ayuda en eliminar la acumulación de grasa localizada y estiliza el contorno de la figura logrando una silueta más estética.</h5>
+            <h5><b>Beneficios</b></h5>
+            <h5>- Favorece la expulsión de toxinas</h5>
+            <h5>-  Activa el flujo sanguíneo</h5>
+            <h5>- Mejora el sistema digestivo</h5>
+            <h5>- Elimina el acumulo de grasas en zonas localizadas</h5>
+        </div>
+    </div>
+    <div class="accordion-container">
+        <a href="#" class="accordion-titulo">Masaje Descontracturante<span class="toggle-icon"></span></a>
+        <div class="accordion-content">
+            <img src="images/Servicios/s_mdescontracturante.jpg" alt=""/>
+            <h5>Son técnicas  utilizadas para bajar los niveles de tensión, debido del estrés, movimientos repetitivos, adquisición de malas posturas en el diario vivir que, a largo plazo, provocan dolencias y malestar corporal general. Mejora de la movilidad y elasticidad del músculo tensionado.</h5>
+            <h5><b>Beneficios</b></h5>
+            <h5>– Disminuye la fatiga física</h5>
+            <h5>– Previene enfermedades musculares producto de la mala postura corporal</h5>
+            <h5>– Libera endorfinas, contribuyendo a un estado placentero</h5>
+            <h5>– Aumenta la circulación sanguínea, mejorando la oxigenación muscular</h5>
+            <h5>– Favorece el sistema nervioso</h5>
+        </div>
+    </div>
+    <div class="accordion-container">
+        <a href="#" class="accordion-titulo">Masaje de Drenaje Linfático<span class="toggle-icon"></span></a>
+        <div class="accordion-content">
+            <img src="images/Servicios/s_mdrenaje.jpg" alt=""/>
+            <h5>Son masajes suaves que favorece la mejora de la circulación y la limpieza del sistema linfático, actúa como filtro para eliminar cierto tipo de residuos que  dañan el organismo.</h5>
+            <h5><b>Beneficios</b></h5>
+            <h5>– Reactiva el funcionamiento del sistema linfático</h5>
+            <h5>– Reduce la retención de líquidos y medicamentos ambulatorios</h5>
+            <h5>– Ayuda a la eliminación de toxinas</h5>
+        </div>
+    </div>
+    <div class="accordion-container">
+        <a href="#" class="accordion-titulo">Levantamiento de Busto y Glúteos<span class="toggle-icon"></span></a>
+        <div class="accordion-content">
+            <img src="images/Servicios/s_levantamiento.jpg" alt=""/>
+            <h5>Es un tratamiento con masajes de moldeamiento en los senos o glúteos, haciendo eñ estímulo al nivel de los tejidos y a nivel muscular, ayudado con producto que actúa a nivel dérmico para dar excelentes resultados.</h5>
+            <h5><b>Beneficios</b></h5>
+            <h5>– Levanta y Aumenta el busto o glúteos satisfactoriamente</h5>
+            <h5>– Se recomienda mínimo 10 sesiones de 2 a 3 veces por semana</h5>
+        </div>
+    </div>
+    <div class="accordion-container">
+        <a href="#" class="accordion-titulo">Day Spa<span class="toggle-icon"></span></a>
+        <div class="accordion-content">
+            <img src="images/Servicios/s_dayspa.jpg" alt=""/>
+            <h5>Tratamiento especial de Exfoliación  y mascarilla que retiran impurezas y células muertas, se hace de forma Facial y corporal además de un masaje relajante </h5>
+            <h5><b>Beneficios</b></h5>
+            <h5>– Armoniza tu cuerpo con tu mente</h5>
+            <h5>- Desintoxicación de la dermis y epidermis de la piel</h5>
+            <h5>- Brinda hidratación, tonicidad y firmeza a la piel</h5>
+            <h5>- Activa a la circulación</h5>
+            <h5>- Relajación muscular</h5>
+        </div>
+    </div>
+    <div class="accordion-container">
+        <a href="#" class="accordion-titulo">Depilación con cera<span class="toggle-icon"></span></a>
+        <div class="accordion-content">
+            <img src="images/Servicios/s_depilacioncera.jpg" alt=""/>
+            <h5>Técnica con acabado perfecto en depilación; la cera es una resina que se derrite para presionar el vello, posteriormente la resina se desprende trayendo consigo los vellos del área tratada</h5>
+            <h5><b>Beneficios</b></h5>
+            <h5>– Ayuda a la despigmentación</h5>
+            <h5>- Retraso del crecimiento del vello</h5>
+            <h5>- Disminución del grosor del vello</h5>
+            <h5>- Deja la piel más tersa y suave</h5>
+        </div>
+    </div>
+    <div class="accordion-container">
+        <a href="#" class="accordion-titulo">Cavitación<span class="toggle-icon"></span></a>
+        <div class="accordion-content">
+            <img src="images/Servicios/s_cavitacion.jpg" alt=""/>
+            <h5>La cavitación ultrasónica consiste en un tratamiento en el cual se generan de forma controlada pequeñas burbujas, que acaban con las células grasas sin dañar el sistema sanguíneo. La grasa se transforme a un estado líquido, y así se elimine de nuestro cuerpo a través de las vías urinarias.</h5>
+            <h5><b>Beneficios</b></h5>
+            <h5>– Elimina celulitis</h5>
+            <h5>- Retraso del crecimiento del vello</h5>
+            <h5>- Reduce talla</h5>
+            <h5>- Moldea la silueta</h5>
+        </div>
+    </div>
+    <div class="accordion-container">
+        <a href="#" class="accordion-titulo">Vacum<span class="toggle-icon"></span></a>
+        <div class="accordion-content">
+            <img src="images/Servicios/s_vacuum.jpg" alt=""/>
+            <h5>Es una técnica que se realiza mediante un compresor que al aspirar la piel actúa sobre esta y sobre los tejidos que se sitúan inmediatamente por debajo de ella. Realiza un masaje de los tejidos internos a los externos.</h5>
+            <h5><b>Beneficios</b></h5>
+            <h5>– Ayuda a combatir Celulitis</h5>
+            <h5>- Reduce medidas</h5>
+            <h5>- Mejora la circulación</h5>
+            <h5>- Limpia los poros</h5>
+            <h5>- Desintoxica la piel</h5>
+        </div>
+    </div>
                 </div>
                 
             </div>
@@ -449,34 +643,19 @@
                 <div class="container">
                     <div class="row">
                         <div class="section-title text-center">
-                            <h3>Nuestros colaboraores</h3>
-                            <p>Los cuales cuentan con una amnplia experiencia.</p>
+                            <h3>Nuestras Promociones</h3>
                         </div>
                     </div>
-                    <div class="row">
-                        
-                        <div class="col-md-3 col-sm-6">
-                            <div class="team-member">
-                                <img src="images/team/manage-1.png" class="img-responsive" alt="">
-                                <div class="team-details">
-                                    <h4>Adolfo Pulido Montalvo</h4>
-                                    <div class="designation"><b>Especialidad: </b>Estética y Longevidad</div><br>
-                                    <div class="designation"><b>Casa de estudios: </b>Instituto de Estudios Superiores en Medicina Universidad del Conde</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="team-member">
-                                <img src="images/team/manage-2.png" class="img-responsive" alt="">
-                                <div class="team-details">
-                                    <h4>Ana Ruth Cruz Aguilar</h4>
-                                    <div class="designation"><b>Especialidad: </b>Enfermería General</div><br><div class="designation"><b>Casa de estudios: </b>CETCS</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div><!-- /.row -->
+                    <div class="row" align="center">
+                    <div class="card"><img width="400px" height="400px" src="images/Promociones/1.jpg"/></div>
+                    <div class="card"><img width="400px" height="400px" src="images/Promociones/2.jpg"/></div>
+                    <div class="card"><img width="400px" height="400px" src="images/Promociones/3.jpg"/></div>
+                    <div class="card"><img width="400px" height="400px" src="images/Promociones/4.jpg"/></div>
+                    <div class="card"><img width="400px" height="400px" src="images/Promociones/5.jpg"/></div>
+                    <div class="card"><img width="400px" height="400px" src="images/Promociones/6.jpg"/></div>
+                    <div class="card"><img width="400px" height="400px" src="images/Promociones/7.jpg"/></div>
+                    <div class="card"><img width="400px" height="400px" src="images/Promociones/8.jpg"/></div> 
+                    </div>
                 </div>
                 
             </div>
@@ -526,13 +705,19 @@
                         
                         <div class="col-md-4">
                             <div class="footer-contact-info">
-                                <h4>Horario</h4>
+                                <h4>Horario</h4><br>
                                 <ul>
-                                    <li><strong>Lunes - Viernes :</strong> 07:00 A.M a 17:00 P.M</li>
+                                    <li><strong>Lunes - Viernes :</strong> 09:00 A.M a 19:00 P.M</li>
                                     <li><strong>Sabado :</strong> 09:00 A.M a 14:00 P.M</li>
                                     <li><strong>Domingo :</strong> Cerrado</li>
                                 </ul>
                             </div>
+                        </div>
+                        <div class="col-md-12">
+                        <h4>Nuestra Ubicación</h4><br>
+                        <br>
+                        <br>
+                            <iframe src="https://wego.here.com/directions/mix//Clínica-Biomedint,-Av.-Las-Américas-303.-Entre-Av.-José-Martí-y-Simón-Bolivar.-Colonia-Lidia-Esther,-86040-Villahermosa,-Mexico:e-eyJuYW1lIjoiQ2xcdTAwZWRuaWNhIEJpb21lZGludCIsImFkZHJlc3MiOiJBdi4gTGFzIEFtXHUwMGU5cmljYXMgMzAzLiAoRW50cmUgQXYuIEpvc1x1MDBlOSBNYXJ0XHUwMGVkIHkgU2ltXHUwMGYzbiBCb2xpdmFyLiBDb2xvbmlhIExpZGlhIEVzdGhlciwgODYwNDAgVmlsbGFoZXJtb3NhIiwibGF0aXR1ZGUiOjE3Ljk5NjQ0LCJsb25naXR1ZGUiOi05Mi45MjkxNSwicHJvdmlkZXJOYW1lIjoiZmFjZWJvb2siLCJwcm92aWRlcklkIjoxNjIwNzg1NTE0ODUzNzg1fQ==?map=17.99644,-92.92915,15,normal&fb_locale=es_LA" width="1100" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                         
                     </div><!--/.row -->
@@ -576,72 +761,7 @@
         <!-- End Contact Section -->
         
         
-         <!-- Start Testimonial Section -->
-        <div class="section-modal modal fade contact" id="testimonial-modal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title text-center">
-                            <h3>Client's Speech About Us</h3>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        
-                        <div class="col-md-6">
-                            <div class="testimonial">
-                                <img src="images/team/manage-1.png" class="img-responsive" alt="...">
-                                <h4>John Doe</h4>
-                                <div class="speech">
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6">
-                            <div class="testimonial">
-                                <img src="images/team/manage-2.png" class="img-responsive" alt="...">
-                                <h4>John Doe</h4>
-                                <div class="speech">
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6">
-                            <div class="testimonial">
-                                <img src="images/team/manage-3.png" class="img-responsive" alt="...">
-                                <h4>John Doe</h4>
-                                <div class="speech">
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6">
-                            <div class="testimonial">
-                                <img src="images/team/manage-4.png" class="img-responsive" alt="...">
-                                <h4>John Doe</h4>
-                                <div class="speech">
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div><!--/.row -->
-                    
-                </div>
-                
-            </div>
-        </div>
-        <!-- End Testimonial Section -->
+         
         
     </body>
     
